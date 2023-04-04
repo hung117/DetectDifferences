@@ -11,7 +11,6 @@ if(SndImage==undefined){
 fetch('../output/coor.json')
     .then((response) => response.json())
     .then((json) => {
-        console.log(json)
         mydata = json
         var len = mydata['differences'].length
         console.log(len)
@@ -20,9 +19,9 @@ fetch('../output/coor.json')
             console.log(data['coor'][0]['x'])
             console.log(data['coor'][0]['y'])
 
-            cx = data['coor'][0]['x']
-            cy = data['coor'][0]['y']
-            radius =  data['radius']
+            cx = data['coor'][0]['x']-20
+            cy = data['coor'][0]['y']-30
+            radius =  data['radius']*2
             createSpot(cx,cy,radius)
         });
     })
@@ -45,14 +44,15 @@ function createSpot(cx,cy,radius){
     spot.classList.add('spot');
     
     // config spot
-    spot.style.top = cy
-    spot.style.left =  cx
+    // console.log("cx: "+cx+",cy: "+cy)
+    spot.style.left =  `${cx}px`;
+    spot.style.top =  `${cy}px`;
     spot.style.width = radius+'px'
     spot.style.height =  radius+'px'
+
     const spotContent = document.createElement('p');
     spotContent.textContent ="clickme";
-    // spot.addEventListener('click',()=>{ handleClick(event,spot)}, {once : true});
-    spot.addEventListener('click',()=>{ handleClick(event,spot)});
+    spot.addEventListener('click',()=>{ handleClick(event,spot)}, {once : true});
     // ## Add to the img
     SndImage.appendChild(spot);
     spot.appendChild(spotContent);
