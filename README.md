@@ -1,2 +1,0 @@
-# DetectDifferences
-Assignment
