@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Find the Differences Game</title>
+    <!-- use live server to bypass the CORS block. -->
+</head>
+<body>
+        <div class="grid-item title">
+            <h4>Game Name</h4>
+        </div>
+        <!-- <div class="grid-item images-holder"> -->
+        <div class="grid-item game-canvas">
+            <div class="score">
+                <p>Find the differences</p>
+                <p id="score">Score: 0.0</p>
+                <p>Click on the Right image to play</p>
+            </div>
+            <div class="flex-container" style="height: 80%;">
+            <!-- <div class="flex-container" style="height: 100%;"> -->
+                <div class="images-holder">
+                    <img src="./res/chick1.png" alt="img1">
+                </div>
+                <div class="images-holder" id="SndImage"> 
+                    <img src="./res/chick3.png" alt="img2">
+                </div>
+            </div> 
+        </div>
+        <!-- <div class="grid-item "> -->
+        <div class="grid-item footer">
+            <!-- <Footer class="footer"> -->
+            <Footer>
+                <p>copyright by me, Product of researching department of blah blah</p>
+            </Footer>
+        </div>
+
+    <script src="./scipt.js"></script>
+</body>
+</html>

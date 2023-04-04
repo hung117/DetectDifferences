@@ -1,0 +1,92 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #082943;
+    color: aliceblue;
+
+}
+html {
+    height: 100%;
+}
+body {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+.title{
+    grid-row-end: 1; 
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between; 
+}
+  
+.flex-container > div {
+    padding: 10px;
+}
+.grid-item {
+    background-color:rgba(64, 85, 109, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+.game-canvas{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #082943;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 30px;
+    width: 70%;
+    height: 90%;
+}
+.images-holder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#SndImage{
+    position: relative;
+
+}
+.spot{
+    bottom: 308px;
+    left: 337px;
+    position: absolute;
+ 
+    /* opacity: 0%; */
+    
+    padding: 0;
+    margin: auto;
+    color: #0eb35b;
+    cursor: zoom-in;
+
+
+    width : 150px;
+    height : 150px;
+    border-radius: 50%;
+    border: 5px solid #11e775;
+}
+.spot p{
+    text-align: center;
+    line-height: 100px;
+}
+.footer {
+    padding-bottom: 100px;
+    grid-row-end: 4;
+}
+#score{
+    color: #14cf71;
+}
+Footer p{
+    padding-top: 0;
+}
+img {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+}
