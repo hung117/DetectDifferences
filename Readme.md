@@ -2,7 +2,7 @@
 Assignment
 # The Game
 The game is accessible via "Game_findDifference" folder, open the webpage with "main.html" <br>
-Please play in the 80% viewport, the game currently has scaling problem. <br>
+The Game now can be played in any viewport, however staying in range of 70-110 is recommended <br>
 
 - The game initially looks like this<br>
 ![Init](./imageProcess/resources/init.png)

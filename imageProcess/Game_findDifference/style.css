@@ -42,10 +42,11 @@ body {
     height: 90%;
 }
 .images-holder{
-    width: 100%;
+    /* width: 100%;
+    
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 #SndImage{
     position: relative;
@@ -82,9 +83,14 @@ Footer p{
     padding-top: 0;
 }
 img {
-    min-width: 100%;
-    min-height: 100%;
-    max-width: 100%;
-    min-width: 100%;
+    /* min-width: 100%;
+    min-height: 100%; */
+    /* max-width: 100%;
+    min-width: 100%; */
     height: auto;
+}
+@media screen and (min-width: 1200px) {
+    .game-canvas{
+        width: 90%;
+    }
 }

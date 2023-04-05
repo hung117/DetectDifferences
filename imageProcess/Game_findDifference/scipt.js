@@ -2,7 +2,6 @@
 var score = 0.0
 var score_interpolation = 0.0
 document.querySelector(".grid-item h4").innerHTML = "Find the differences minigame";
-// document.querySelector("#score").innerHTML = score + "/100";
 const SndImage = document.querySelector("#SndImage");
 
 if(SndImage==undefined){
@@ -19,8 +18,8 @@ fetch('../output/coor.json')
             console.log(data['coor'][0]['x'])
             console.log(data['coor'][0]['y'])
 
-            cx = data['coor'][0]['x']-20
-            cy = data['coor'][0]['y']-30
+            cx = data['coor'][0]['x']-30
+            cy = data['coor'][0]['y']-40
             radius =  data['radius']*2
             createSpot(cx,cy,radius)
         });
